@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- Family fonts lo mejor para esto es darle al enlace clickando en 1.5 de los apuntes de CSS-->
+<html lang="en"> <!-- google fonts tambien existe y ayuda -->
+ <!-- Hay 5 familias o grupos de fuentes:
+ 1.Serif: las que tienen en la punta de la letra un
+ "tope" o "serifa" (como la Times New Roman)
+ 2."Sans Serif" las que no tienen esos "topes" como la Arial
+ 3.La Monoespaciadas: Todas las letras tienen el mismo tamaño, como las antiguas máquinas de escribir, como la Courier.
+ Se usan en programación.
+ 4.Cursive: son cursivas, muy "elegantes"
+ 5.Fantasy, muy variadas e imaginativas  
+ 
+ Para instalar las fuentes, un ejemplo: font-family: Arial, Helvetica, sans-serif-->
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Orbitron:wght@400..900&family=Playwrite+HR+Lijeva+Guides&display=swap');
+
+        h1 { font-family:"Playwrite HR Lijeva Guides", serif;
+    font-size: 4em;
+text-align: center;}
+        h2 {font-family: "Orbitron", serif; font-style:italic ;}
+        h3 {font-family: "Eater", serif;}
+        p { font-size: 2em; font-weight: lighter;} /* con 1em se queda por tamaño defecto en el navegador 
+        Además, no olvidar que font-weight sirve para grosor de la letra, bold es negrita pero puedo meter valores numéricos*/
+    </style>
+</head>
+
+<body>
+    <h1>Florista Jacinto</h1>
+    <h2> Todo es mejor si se lo dices con una flor</h2>
+    <h3>Flores frescas</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut similique consequatur eaque excepturi quia laborum dignissimos velit ratione adipisci facilis
+        natus voluptatum delectus officia, commodi repellat, error provident corrupti nulla!</p>
+    <h3>Centros de mesa</h3>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus velit quo delectus dolore eligendi quae repellendus consequuntur ipsam iste vel qui nam, facilis
+    maxime molestiae nisi pariatur officia neque quasi.
+
+</body>
+</html>

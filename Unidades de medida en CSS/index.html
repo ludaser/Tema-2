@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 3em; /* puedo usar cualquier unidad de medida, px, ,em (tamaño letra por defecto), cms, pulgadas (in), los decimales van con . no con ,... */
+        }
+        #caja {width: 100vw; /* vw quiere decir que es un 1% el ancho total de la parte visible de la pantalla (viewport). por tanto 100vw es un 100% del ancho de la pantalla */
+        height:100vh ;    /* esto es lo mismo de arriba (vw) pero en alto */
+        background-color:aqua;}
+        #titulo {background-color: yellow;
+        width: 50%;} /* esto ocupa la mitad de la caja padre */
+    </style>
+</head>
+
+<body>
+    <div id="caja">
+        <div id="titulo">
+            Esto es una subcaja
+    </div>
+        <h1>Unidades de medida en CSS</h1>
+        <p>A diferencia de HTML, en CSS se puede indicar
+            el tamaño de los elementos con distintas unidades.
+            Por ejemplo: centímetros, pulgadas, píxeles...
+        </p>
+    </div>
+</body>
+
+</html>
