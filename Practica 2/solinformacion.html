@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {font-family: Arial, Helvetica, sans-serif;
+            font-size:18px;}
+        body {background-color: antiquewhite;}
+        h1 {font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            color: brown;}
+    </style>
+</head>
+<body>
+    <h1>Formulario de información</h1>
+    <form post="solinformacion.php">
+        <fieldset>
+            <legend>Sus datos</legend>
+            <p>
+                <label for="">Nombre y Apellidos</label>
+                <input type="" maxlength="50" name="nombre" required id="nom">
+            </p>
+            <p>
+                <label for="contraseña">Contraseña</label>
+                <input type="password" maxlength="8"    name="Contraseña" id="contraseña"> 
+            </p>
+            <p>
+                <label for="usuario">Usuario</label>
+                <input type="text" maxlength="8"    name="Contraseña"   id="contraseña" disabled placeholder="anónimo">
+            </p>
+            <p>
+                Nivel: </p>
+                <p><label for="profesional">Profesional:</label>
+                <input type="radio" value="pro"   id="hombre" name="nivel">
+            </p>
+               <p> <label for="avanzado">Avanzado:</label>
+                <input type="radio" value="ava"   checked id="avanzado"   name="nivel">
+            </p>
+            <p>
+                <label for="principiante">Principiante:</label>
+                <input type="radio" value="pri" id="principiante"   name="nivel">
+            </p>
+        </fieldset>
+        <p>
+            <label for="nacionalidad">Nacionalidad:</label> 
+             <select name="nacionalidad" id="nacionalidad">
+                 <option value="espa" selected>España</option>
+                 <option value="fran">Francia</option>
+                 <option value="port">Portugal</option>
+                 <option value="marr">Marruecos</option>
+             </select>
+        </p>
+        
+        <label for="descrip">Descripción:</label>
+        <textarea name="descrip"; cols="40"; rows="6"; id="descrip"></textarea>
+        <p> <label for="novedades">Deseo recibir información sobre novedades y ofertas</label>
+            <input type="checkbox"  checked name="novedades" id="novedades"> </p>
+
+            <p> <label for="novedades">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre la protección de datos</label>
+                <input type="checkbox" name="novedades" id="novedades"> </p>
+            <p>
+                <label for="fotografia">Adjuntar foto</label>
+                <input type="file"  name="fotografia" id="foto">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reiniciar datos">
+            </p>
+
+                
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>
